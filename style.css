@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+#section {
+  display: flex;
+  width: 100%;
+  background: white;
+  height: 100vh;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkbox {
+  margin-bottom: 5%;
+  -webkit-appearance: none;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
+  border-radius: 50px;
+  position: relative;
+}
+.checkbox::before {
+  content: "";
+  background: transparent;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: all 0.9s;
+  background-color: #f7ca33;
+}
+.checkbox:checked {
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  background-size: cover;
+  transition: background-image 0.9s;
+}
+.checkbox:checked::before {
+  transform: translate(100%);
+  transition: all 0.9s;
+  background-color: #ecf0f3;
+}
+#container {
+  width: 33%;
+  height: 50vh;
+  background: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  
+}
+#container h2 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin: 8px;
+  padding: 10px;
+  text-shadow: 3px 3px 4px rgb(59, 197, 121);
+}
+#Email {
+  background: black;
+  color: white;
+  width: 110%;
+  height: 25%;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+#password {
+  border: 2px solid white;
+  border-radius: 4px;
+  color: white;
+  background: black;
+  width: 110%;
+  height: 25%;
+  margin: 10px;
+  padding: 10px;
+}
+#label1 {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+#label2 {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+}
+.btn-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
+#btn {
+  width: 100px;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  background: transparent;
+  border: 2px solid rgb(59, 197, 121);
+  font-size: 20px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.5sec;
+}
+#btn:hover {
+  background: rgb(59, 197, 121);
+  width: 120px;
+}

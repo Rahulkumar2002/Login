@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|Full_stack2002</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="section">
+        <input type="checkbox" class="checkbox" onclick="dark()">
+        <div id="container">
+            <h2 id="h2">Log in</h2>
+            <form class="form">
+                <label id="label1" for="Email">Email</label><br>
+                <input type="email" id="Email" name="Email" placeholder="Email"><br>
+                <label id="label2" for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <div class="btn-btn">
+                    <input type="button" id="btn" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let click = 0;
+        dark = () => {
+            click += 1;
+            if (click % 2 != 0) {
+                document.getElementById("section").style.backgroundColor = "black";
+                document.getElementById("container").style.backgroundColor = "white";
+                document.getElementById("btn").style.color = "black";
+                document.getElementById("h2").style.color = "black";
+                document.getElementById("label1").style.color = "black";
+                document.getElementById("label2").style.color = "black";
+            }
+            else {
+                document.getElementById("section").style.backgroundColor = "white";
+                document.getElementById("container").style.backgroundColor = "black";
+                document.getElementById("btn").style.color = "white";
+                document.getElementById("h2").style.color = "white";
+                document.getElementById("label1").style.color = "white";
+                document.getElementById("label2").style.color = "white";
+            }
+        }
+    </script>
+</body>
+
+</html>
